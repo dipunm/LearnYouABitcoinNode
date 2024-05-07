@@ -1,3 +1,4 @@
+/* Base styles for the layout */
 body,
 html,
 #root {
@@ -57,4 +58,47 @@ html,
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 768px) {
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid #34495e;
+    }
+
+    .sidebar h2 {
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .sidebar nav {
+        display: none;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .main-content {
+        padding: 5px;
+    }
+
+    .content {
+        padding: 10px;
+    }
 }
