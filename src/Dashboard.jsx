@@ -1,10 +1,11 @@
 import './Dashboard.css';
+import Banner from './components/Banner';
 
 export default function App() {
   return (
     <div className="dashboard-container">
       <aside className="sidebar">
-        <h2>Dashboard</h2>
+        <h2>Running Bitcoin</h2>
         <nav>
           <ul>
             <li>Home</li>
@@ -14,11 +15,11 @@ export default function App() {
         </nav>
       </aside>
       <main className="main-content">
-        <header>
-          <h1>Welcome to the Dashboard</h1>
-        </header>
+        <Banner>
+          <h1>Congratulations!</h1>
+          <p className="subtitle">Your Bitcoin node is up and ready for setup.</p>
+        </Banner>
         <section className="content">
-          <p>Start adding your content here!</p>
         </section>
       </main>
     </div>
